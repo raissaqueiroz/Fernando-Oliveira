@@ -1,0 +1,3 @@
+.alert {width: 80%; margin: 0 auto; text-align: center;}
+.alert-success {background-color: #D4EDDA; color: #164f23;}
+.alert-danger {background-color: #F8D7DA; color: #9e1420;}

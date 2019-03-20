@@ -1,0 +1,103 @@
+/*Hard Reset*/
+* {margin: 0; padding: 0; border: none; box-sizing: border-box; font-family: 'Coiny', cursive;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+
+/**************************************
+ *            Mobile First            *
+ **************************************/
+
+/*Cabeçalho ~ Menu*/
+	header.cabecalho {width: 100%; background: #000000;}
+	header.cabecalho div.menu {width: 90%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+	header.cabecalho div.menu nav.menu-nav {}
+	header.cabecalho div.menu nav.menu-nav #icon-menu{display: none;}
+	header.cabecalho div.menu nav.menu-nav #icon-menu:checked ~ .barra {display: none;}
+	header.cabecalho div.menu nav.menu-nav ul.barra {padding: 10%; width: 100%; z-index: 2; position: absolute; left: 0; top: 80px; background: #000; display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: stretch;}
+	header.cabecalho div.menu nav.menu-nav ul.barra a {color: #fff;}
+	header.cabecalho div.menu nav.menu-nav ul.barra a:enabled ~ .barra {display: none;}
+	header.cabecalho div.menu nav.menu-nav ul.barra a li {line-height: 50px; text-align: center; background: transparent; border: 1px solid #fff;}
+	header.cabecalho div.menu nav.menu-nav ul.barra a li:hover {background: rgba(255, 255, 255, 0.1);}
+/*Parallax do Topo do Site*/
+	section.parallax-1 {width: 100%; height: 400px; background: url('../img/parallax-topo.jpg'); display: flex; justify-content: center; align-items: center; background-size: cover; }
+	section.parallax-1 article.parallax-1-2 {text-align: center;}
+	section.parallax-1 article.parallax-1-2 h1, section.parallax-1 article.parallax-1-2 h2 {color: #fff;}
+	section.parallax-1 article.parallax-1-2 h1 {font-weight: 700; font-size: 45px;}
+	section.parallax-1 article.parallax-1-2 h2 { font-size: 30px; }
+	section.parallax-1 article.parallax-1-2 {display: none;}
+/*Sobre*/
+	section.sobre {width: 100%; background: #FFFFFF; padding-top: 60px;}
+	section.sobre article.sobre-container {width: 80%; margin: auto; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+	section.sobre article.sobre-container div {flex-grow: 1;}
+	section.sobre article.sobre-container div.sobre-img {margin-bottom: 15px;}
+	section.sobre article.sobre-container div.sobre-caption {text-align: justify; color: gray; }
+	section.sobre article.sobre-container div.sobre-caption h2 {font-family: 'Montserrat', sans-serif; text-align: center; font-weight: 700; margin-bottom: 30px; font-size: 35px;}
+	section.sobre article.sobre-container div.sobre-caption p {font-size: 18px; font-family: 'Montserrat', sans-serif;}
+/*Galeria de Fotos*/
+					 
+	section.galeria {width: 100%; margin-top: 40px; background: #000000; padding: 2%; display: flex; flex-flow: column wrap; justify-content: center; align-items: center;}
+	section.galeria article.galeria-row {width: 100%; display: flex; flex-flow: column wrap; justify-content: center; align-items: center;}
+	section.galeria article.galeria-row div.galeria-foto {flex: 1;}
+	section.galeria article.galeria-row div.galeria-foto img {flex: 1;}
+/*Contato - Formulário de Contato*/
+	section.contato {width: 100%; background: #dcdcdc;}
+	section.contato article.contato-container {margin: 0 auto; width: 100%; display: flex; flex-flow: column wrap; justify-content: center; align-items: center;}
+	section.contato article.contato-container div.contato {flex: 1;}
+	section.contato article.contato-container div.contato-form form {display: flex; flex-flow: column wrap; justify-content: center; align-items: center; }
+	section.contato article.contato-container div.contato-form form input.input   {font-family: 'Montserrat', sans-serif; width: 80%; height: 40px; margin-bottom: 20px; padding: 4%;}
+	section.contato article.contato-container div.contato-form form button.button {font-family: 'Montserrat', sans-serif; background: #000; color: #fff; width: 40%; height: 40px; margin-top: 15px;  font-size: 18px; margin-left: 40%; padding: 2%;}
+	section.contato article.contato-container div.contato-form form textarea {font-family: 'Montserrat', sans-serif; width: 80%; height: 200px; margin-bottom: 20px; padding: 4%;}
+/*Contato - Endereço*/
+
+	section.contato article.contato-container {padding-bottom: 40px;}
+	section.contato article.contato-container div.contato-endereco { margin-top: 40px;}
+	section.contato article.contato-container div.contato-endereco div.iframe {flex: 1; display: flex; flex-flow: column wrap; justify-content: center; align-items: center;}
+	section.contato article.contato-container div.contato-endereco div.iframe iframe {width: 100%;}
+	section.contato article.contato-container div.contato-endereco div.iframe-caption {margin-top: 20px; text-align: center; padding: 4%;}
+	section.contato article.contato-container div.contato-endereco div.iframe-caption p {font-family: 'Montserrat', sans-serif;}
+/*Rodapé*/
+	footer.rodape {width: 100%; background: #000; height: 100px; display: flex; justify-content: center; align-items: center;}
+	footer.rodape div.rodape-container {width: 100%; text-align: center; }
+	footer.rodape div.rodape-container a, footer.rodape div.rodape-container h3 { font-family: 'Montserrat', sans-serif; color: #fff; text-align: center;}
+	footer.rodape div.rodape-container a {letter-spacing: 0.4rem; font-size: 16px;}
+	footer.rodape div.rodape-container h3 {letter-spacing: 0.2rem; font-size: 12px; margin-top: 10px;}
+/**************************************
+ *              DESKTOP               *
+ **************************************/
+@media screen and (min-width: 960px){
+	/*Cabeçalho ~ Menu*/
+		header.cabecalho div.menu nav.menu-nav {width: 40%;}
+		header.cabecalho div.menu nav.menu-nav #icon-menu:checked ~ .barra {display: flex;}
+		header.cabecalho div.menu nav.menu-nav label img {display: none;}
+		header.cabecalho div.menu nav.menu-nav ul.barra {width: 100%; padding: 0; background: transparent; position: relative; top: 0; left: 0; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;}
+		header.cabecalho div.menu nav.menu-nav ul.barra a li {border: none;}
+		header.cabecalho div.menu nav.menu-nav ul.barra a li:hover {font-size: 110%; background: #000;}
+	/*Parallax do Topo do Site*/
+		section.parallax-1 article.parallax-1-2 {display: inline;} /*Escondendo legenda do parallax do topo*/
+	/*Sobre*/
+		section.sobre article.sobre-container {flex-direction: row; flex-wrap: nowrap;}
+		section.sobre article.sobre-container div {padding : 5%; flex: 1;}
+		section.sobre article.sobre-container div.sobre-caption h2 {font-size: 45px; margin-bottom: 45px;}
+		section.sobre article.sobre-container div.sobre-caption p {font-size: 22px;}
+	/*Galeria de Fotos*/
+		section.galeria {padding: 20px 0;}
+		section.galeria article.galeria-row {width: 80%; flex-flow: row nowrap; justify-content: space-between; }
+		section.galeria article.galeria-row div.galeria-foto {padding: 2%;}
+	/*CONTATO - dcdcdc;*/
+		section.contato {padding-bottom: 40px;}
+		section.contato article.contato-container {flex-flow: row nowrap; justify-content: space-between; align-items: flex-start; padding: 0 10%;}
+		section.contato article.contato-container div.contato-form form {align-items: space-between;}
+		section.contato article.contato-container div.contato-endereco {margin-top: 0;}
+	/*Footer*/
+	footer.rodape div.rodape-container {width: 60%;}
+
+
+ }
+
+@media screen and (min-width: 1300px){
+	/*Cabeçalho ~ Menu*/
+		header.cabecalho div.menu nav.menu-nav {width: 30%;}
+
+}
+
