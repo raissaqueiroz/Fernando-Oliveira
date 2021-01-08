@@ -1,5 +1,6 @@
-# Fernando-Oliveira
-One page desenvolvida com o intuito de exercer em prática os conhecimentos teóricos em design responsivo utilizando flexbox.
+# Portfólio Fotográfico - Fernando Oliveira
+
+Primeiro site que eu orgulhosamente fiz utilizando HTML, CSS, JavaScript e um pouco de PHP Procedural. Totalmente responsivo sem framework algum, usando Flexbox + Media Queries para tal.
 
 _Stack utilizada: HTML5, CSS3, Design Responsivo com Media Queries e Flexbox, JavaScript e PHP :)_
 
